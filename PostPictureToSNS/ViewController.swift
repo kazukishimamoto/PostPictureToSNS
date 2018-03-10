@@ -20,6 +20,26 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         // Dispose of any resources that can be recreated.
     }
 
+    @IBOutlet weak var pictureImage: UIImageView!
 
+    //カメラを起動するをタップすると実行
+    @IBAction func cameraButtonAction(_ sender: Any) {
+        //カメラが利用可能かチェック
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            print("カメラは利用できます")
+            let imagePickerController = UIImagePickerController()
+            
+            imagePickerController.sourceType = .camera
+            
+            imagePickerController.delegate = self
+            
+            present(imagePickerController, animated: true, completion: nil)
+        }else {
+            print("カメラは利用できません")
+        }
+    }
+    @IBAction func SNSButtonAction(_ sender: Any) {
+    }
+    
 }
 
