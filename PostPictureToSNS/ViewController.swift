@@ -39,11 +39,11 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         }
     }
     @IBAction func SNSButtonAction(_ sender: Any) {
-        
-        func UIImagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]){
-            pictureImage.image = info[UIImagePickerControllerOriginalImage] as? UIImage
-            dismiss(animated: true, completion: nil)
-        }
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]){
+        pictureImage.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        dismiss(animated: true, completion: nil)
     }
     
 }

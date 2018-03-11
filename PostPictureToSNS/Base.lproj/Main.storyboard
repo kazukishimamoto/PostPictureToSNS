@@ -64,7 +64,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="cameraCuttonAction" destination="uZK-KA-Cxc" id="bjx-cE-X8n"/>
                         <outlet property="pictureImage" destination="yEc-qO-Aw8" id="mjd-Te-osq"/>
                     </connections>
                 </viewController>
